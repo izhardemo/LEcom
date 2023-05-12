@@ -11,7 +11,7 @@
         <a href="{{route('admin.product.index')}}" class="btn btn-sm btn-gradient-primary">Back</a>
     </div>
     <div class="card-body mt-2">
-        <form id="updateproduct" action="{{route('admin.product.update', $product->id)}}" method="post">
+        <form id="updateproduct" action="{{route('admin.product.update', $product->id)}}" method="post" enctype="multipart/form-data">
             @csrf @method('PUT')
             <!-- Category -->
             <div class="mb-1">
