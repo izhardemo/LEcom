@@ -128,7 +128,7 @@ class ProductController extends Controller
     {
         $request->validate([
             'category' => 'required',
-            'name' => 'required|unique:products,name,',
+            'name' => 'required|unique:products,name,'.$product->id,
             'mrp' => 'required',
             'price' => 'required',
         ]);

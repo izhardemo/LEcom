@@ -25,7 +25,9 @@
         <div class="mb-1">
             <label for="image" class="form-label fw-bold">{{__('Image')}}</label>
             @if($product->image)
-                <img src="{{asset('storage/'. $product->image)}}" alt="{{asset('storage/'.$product->image)}}" class="img-thumbnail mt-1" style="height: 120px; width:120px;">
+                <div>
+                    <img src="{{asset('storage/'. $product->image)}}" alt="{{asset('storage/'.$product->image)}}" class="img-thumbnail mt-1" style="height: 120px; width:120px;">
+                </div>
             @endif
         </div>
         <!-- Mrp -->
